@@ -29,7 +29,7 @@ const brands = [
 ];
 
 const BrandsSection = () => (
-  <section className="py-14 bg-background">
+  <section className="pt-2 pb-14 bg-background">
     <div className="container mx-auto px-4 md:px-8">
       <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-8">
         {brands.map((b, i) => (

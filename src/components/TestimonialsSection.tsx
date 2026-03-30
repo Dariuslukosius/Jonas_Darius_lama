@@ -82,7 +82,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="case-studies" className="pt-8 md:pt-12 pb-14 md:pb-20 bg-secondary relative">
+    <section id="case-studies" className="pt-8 md:pt-12 pb-2 bg-secondary relative">
       <div className="container mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -152,16 +152,6 @@ const TestimonialsSection = () => {
             </motion.div>
           ))}
         </div>
-      </div>
-
-      {/* View all button */}
-      <div className="container mx-auto px-4 md:px-8 mt-10 text-center">
-        <Link
-          to="/case-studies"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent/80 transition-colors uppercase tracking-wider"
-        >
-          All Reviews <ArrowRight className="w-4 h-4" />
-        </Link>
       </div>
     </section>
   );
