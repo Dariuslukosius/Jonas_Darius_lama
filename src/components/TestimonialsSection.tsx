@@ -1,6 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 import avatarLina from "@/assets/avatar-lina.jpg";
 import avatarGiedre from "@/assets/avatar-giedre.jpg";
@@ -88,15 +90,9 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <span className="text-sm font-semibold text-accent uppercase tracking-widest">
-            Testimonials
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-3 text-foreground">
-            Trusted by Local Businesses Everywhere
+            Helped 350+ local businesses grow on Google
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            Real reviews from real business owners who achieved top rankings with our proven SEO strategies.
-          </p>
         </motion.div>
       </div>
 
@@ -156,6 +152,16 @@ const TestimonialsSection = () => {
             </motion.div>
           ))}
         </div>
+      </div>
+
+      {/* View all button */}
+      <div className="container mx-auto px-4 md:px-8 mt-10 text-center">
+        <Link
+          to="/case-studies"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent/80 transition-colors uppercase tracking-wider"
+        >
+          All Reviews <ArrowRight className="w-4 h-4" />
+        </Link>
       </div>
     </section>
   );
