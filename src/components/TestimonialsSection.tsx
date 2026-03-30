@@ -88,15 +88,9 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <span className="text-sm font-semibold text-accent uppercase tracking-widest">
-            Testimonials
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-3 text-foreground">
-            Trusted by Local Businesses Everywhere
+            Helped 350+ local businesses grow on Google
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            Real reviews from real business owners who achieved top rankings with our proven SEO strategies.
-          </p>
         </motion.div>
       </div>
 
