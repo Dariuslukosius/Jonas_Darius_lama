@@ -1,36 +1,45 @@
 import { motion } from "framer-motion";
 
+import artfiksa from "@/assets/brands/artfiksa.png";
+import autoVela from "@/assets/brands/auto-vela.png";
+import clinicDpc from "@/assets/brands/clinic-dpc.png";
+import ecoResort from "@/assets/brands/eco-resort.png";
+import eraEsthetic from "@/assets/brands/era-esthetic.png";
+import fastCar from "@/assets/brands/fast-car.png";
+import motoSvajone from "@/assets/brands/moto-svajone.png";
+import royalHorse from "@/assets/brands/royal-horse.png";
+import sokrato from "@/assets/brands/sokrato.png";
+
 const brands = [
-  "Google Partner",
-  "SEMrush",
-  "Moz",
-  "Ahrefs",
-  "BrightLocal",
-  "Yext",
+  { src: artfiksa, alt: "Artfiksa Plytelės" },
+  { src: autoVela, alt: "Auto Vela" },
+  { src: clinicDpc, alt: "Clinic DPC" },
+  { src: ecoResort, alt: "Eco Resort Trakai" },
+  { src: eraEsthetic, alt: "Era Esthetic Dental" },
+  { src: fastCar, alt: "Fast Car Shop" },
+  { src: motoSvajone, alt: "Moto Svajonė" },
+  { src: royalHorse, alt: "Royal Horse Resort" },
+  { src: sokrato, alt: "Sokrato Clinica" },
 ];
 
 const BrandsSection = () => (
-  <section className="py-16 bg-background">
+  <section className="py-14 bg-background">
     <div className="container mx-auto px-4 md:px-8">
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-10"
-      >
-        Tools & Partners We Work With
-      </motion.p>
-      <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
-        {brands.map((brand, i) => (
+      <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-8">
+        {brands.map((b, i) => (
           <motion.div
-            key={brand}
+            key={i}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.08 }}
-            className="text-xl md:text-2xl font-heading font-bold text-foreground/20 hover:text-foreground/40 transition-colors select-none"
+            transition={{ delay: i * 0.06 }}
           >
-            {brand}
+            <img
+              src={b.src}
+              alt={b.alt}
+              loading="lazy"
+              className="h-14 md:h-16 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+            />
           </motion.div>
         ))}
       </div>
