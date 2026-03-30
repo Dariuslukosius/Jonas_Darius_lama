@@ -1,23 +1,6 @@
 import { motion } from "framer-motion";
-import { Search, MapPin, Brain, MousePointerClick } from "lucide-react";
-
-const solutions = [
-  {
-    icon: <div className="flex items-center gap-3 mb-6"><Search className="w-12 h-12 text-accent" /><Brain className="w-10 h-10 text-accent/70" /></div>,
-    title: "SEO + AI SEO",
-    desc: "Be found on Google and AI search when customers are searching.",
-  },
-  {
-    icon: <MapPin className="w-14 h-14 text-accent mb-6" />,
-    title: "Local SEO",
-    desc: "Be visible to your local customers on Google Maps.",
-  },
-  {
-    icon: <MousePointerClick className="w-14 h-14 text-accent mb-6" />,
-    title: "Google Ads",
-    desc: "Drive targeted traffic and generate leads with paid search campaigns.",
-  },
-];
+import seoAiImg from "@/assets/seo-ai-seo.png";
+import localSeoImg from "@/assets/local-seo.png";
 
 const SolutionsSection = () => (
   <section className="py-16 md:py-24 hero-bg">
@@ -36,21 +19,24 @@ const SolutionsSection = () => (
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-3 gap-6">
-        {solutions.map((s, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
-            className="rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 p-8 md:p-10 text-center hover:bg-primary-foreground/10 transition-colors"
-          >
-            <div className="flex justify-center">{s.icon}</div>
-            <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">{s.title}</h3>
-            <p className="text-primary-foreground/50 leading-relaxed">{s.desc}</p>
-          </motion.div>
-        ))}
+      <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="rounded-2xl overflow-hidden"
+        >
+          <img src={seoAiImg} alt="SEO + AI SEO" className="w-full h-auto" loading="lazy" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="rounded-2xl overflow-hidden"
+        >
+          <img src={localSeoImg} alt="Local SEO" className="w-full h-auto" loading="lazy" />
+        </motion.div>
       </div>
     </div>
   </section>
