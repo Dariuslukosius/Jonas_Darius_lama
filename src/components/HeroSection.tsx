@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroPhone from "@/assets/hero-phone.webp";
 
 const stats = [
@@ -49,12 +50,16 @@ const HeroSection = () => (
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <Button variant="hero" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/85 shadow-lg">
-              Get Your Free SEO Audit <ArrowRight className="ml-1 w-4 h-4" />
-            </Button>
-            <Button variant="hero-outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
-              View Case Studies
-            </Button>
+            <Link to="/contacts">
+              <Button variant="hero" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/85 shadow-lg">
+                Get Your Free SEO Audit <ArrowRight className="ml-1 w-4 h-4" />
+              </Button>
+            </Link>
+            <Link to="/case-studies">
+              <Button variant="hero-outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+                View Case Studies
+              </Button>
+            </Link>
           </div>
         </motion.div>
 

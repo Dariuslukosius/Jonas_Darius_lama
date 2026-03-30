@@ -1,9 +1,18 @@
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import logoImg from "@/assets/llama-logo.png";
 
+const quickLinks = [
+  { label: "Home", to: "/" },
+  { label: "About Us", to: "/about" },
+  { label: "Case Studies", to: "/case-studies" },
+  { label: "Services", to: "/services" },
+  { label: "Contacts", to: "/contacts" },
+];
+
 const FooterSection = () => (
-  <footer id="contacts" className="hero-bg py-16">
+  <footer className="hero-bg py-16">
     <div className="container mx-auto px-4 md:px-8">
       <div className="grid md:grid-cols-3 gap-12">
         {/* Brand */}
@@ -27,10 +36,10 @@ const FooterSection = () => (
         >
           <h3 className="font-semibold text-primary-foreground mb-4">Quick Links</h3>
           <div className="space-y-2">
-            {["Home", "About Us", "Case Studies", "Services", "Contacts"].map((l) => (
-              <a key={l} href={`#${l.toLowerCase().replace(" ", "-")}`} className="block text-sm text-primary-foreground/60 hover:text-primary-foreground/90 transition-colors">
-                {l}
-              </a>
+            {quickLinks.map((l) => (
+              <Link key={l.to} to={l.to} className="block text-sm text-primary-foreground/60 hover:text-primary-foreground/90 transition-colors">
+                {l.label}
+              </Link>
             ))}
           </div>
         </motion.div>
