@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BrandsSection from "@/components/BrandsSection";
 import StatsSection from "@/components/StatsSection";
+import SolutionsSection from "@/components/SolutionsSection";
 import WhiteHatSection from "@/components/WhiteHatSection";
 import FooterSection from "@/components/FooterSection";
 import { Button } from "@/components/ui/button";
@@ -23,6 +24,7 @@ const Index = () => (
       </Link>
     </section>
     <StatsSection />
+    <SolutionsSection />
     <WhiteHatSection />
     <FooterSection />
   </div>
