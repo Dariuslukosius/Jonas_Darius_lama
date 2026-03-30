@@ -4,7 +4,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import BrandsSection from "@/components/BrandsSection";
 import StatsSection from "@/components/StatsSection";
 import SolutionsSection from "@/components/SolutionsSection";
-
+import CaseStudiesSection from "@/components/CaseStudiesSection";
 import FooterSection from "@/components/FooterSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -25,7 +25,7 @@ const Index = () => (
     </section>
     <StatsSection />
     <SolutionsSection />
-    
+    <CaseStudiesSection />
     <FooterSection />
   </div>
 );
