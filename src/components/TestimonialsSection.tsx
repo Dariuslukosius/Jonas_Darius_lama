@@ -1,5 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import avatarLina from "@/assets/avatar-lina.jpg";
@@ -150,6 +152,16 @@ const TestimonialsSection = () => {
             </motion.div>
           ))}
         </div>
+      </div>
+
+      {/* View all button */}
+      <div className="container mx-auto px-4 md:px-8 mt-10 text-center">
+        <Link
+          to="/case-studies"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent/80 transition-colors uppercase tracking-wider"
+        >
+          All Reviews <ArrowRight className="w-4 h-4" />
+        </Link>
       </div>
     </section>
   );
