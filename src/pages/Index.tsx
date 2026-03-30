@@ -25,7 +25,7 @@ const Index = () => (
     </section>
     <StatsSection />
     <SolutionsSection />
-    
+    <CaseStudiesSection />
     <FooterSection />
   </div>
 );
