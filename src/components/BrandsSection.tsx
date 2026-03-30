@@ -44,7 +44,7 @@ const BrandsSection = () => (
               src={b.src}
               alt={b.alt}
               loading="lazy"
-              className="h-14 md:h-16 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-14 md:h-16 w-auto object-contain"
             />
           </motion.div>
         ))}
