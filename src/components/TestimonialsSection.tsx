@@ -82,13 +82,13 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="case-studies" className="py-20 md:py-28 bg-secondary relative">
+    <section id="case-studies" className="pt-8 md:pt-12 pb-14 md:pb-20 bg-secondary relative">
       <div className="container mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-14"
+          className="text-center mb-8"
         >
           <h2 className="text-3xl md:text-4xl font-bold mt-3 text-foreground">
             Helped 350+ local businesses grow on Google
@@ -125,7 +125,7 @@ const TestimonialsSection = () => {
         {/* Scrollable row */}
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide px-6 md:px-16 pb-4 snap-x snap-mandatory"
+          className="flex gap-3 overflow-x-auto scrollbar-hide px-6 md:px-16 pb-4 snap-x snap-mandatory"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {testimonials.map((t, i) => (
@@ -135,20 +135,20 @@ const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="min-w-[300px] max-w-[340px] md:min-w-[360px] md:max-w-[380px] flex-shrink-0 snap-start rounded-2xl bg-card p-7 border border-border shadow-sm hover:shadow-md transition-shadow"
+              className="min-w-[260px] max-w-[280px] md:min-w-[300px] md:max-w-[320px] flex-shrink-0 snap-start rounded-xl bg-card p-5 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="flex items-center gap-4 mb-5">
+              <div className="flex items-center gap-3 mb-3">
                 <img
                   src={t.avatar}
                   alt={t.name}
                   loading="lazy"
                   width={512}
                   height={512}
-                  className="w-12 h-12 rounded-full object-cover ring-2 ring-accent/30"
+                  className="w-10 h-10 rounded-full object-cover ring-2 ring-accent/30"
                 />
-                <p className="font-semibold text-foreground leading-tight">{t.name}</p>
+                <p className="font-semibold text-foreground leading-tight text-sm">{t.name}</p>
               </div>
-              <p className="text-foreground/80 leading-relaxed text-[15px]">"{t.text}"</p>
+              <p className="text-foreground/80 leading-relaxed text-[13px]">"{t.text}"</p>
             </motion.div>
           ))}
         </div>
