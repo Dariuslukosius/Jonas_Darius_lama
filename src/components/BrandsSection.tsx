@@ -9,6 +9,9 @@ import fastCar from "@/assets/brands/fast-car.png";
 import motoSvajone from "@/assets/brands/moto-svajone.png";
 import royalHorse from "@/assets/brands/royal-horse.png";
 import sokrato from "@/assets/brands/sokrato.png";
+import svajonuSpa from "@/assets/brands/svajoniu-spa.png";
+import televizoriu from "@/assets/brands/televizoriu.png";
+import wheelshop from "@/assets/brands/wheelshop.png";
 
 const brands = [
   { src: artfiksa, alt: "Artfiksa Plytelės" },
@@ -20,6 +23,9 @@ const brands = [
   { src: motoSvajone, alt: "Moto Svajonė" },
   { src: royalHorse, alt: "Royal Horse Resort" },
   { src: sokrato, alt: "Sokrato Clinica" },
+  { src: svajonuSpa, alt: "Svajonių SPA" },
+  { src: televizoriu, alt: "Televizorių Išparduotuvė" },
+  { src: wheelshop, alt: "Wheelshop.lt" },
 ];
 
 const BrandsSection = () => (
