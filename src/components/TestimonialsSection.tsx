@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+
 
 import avatarLina from "@/assets/avatar-lina.jpg";
 import avatarGiedre from "@/assets/avatar-giedre.jpg";
