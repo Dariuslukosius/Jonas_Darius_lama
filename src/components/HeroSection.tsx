@@ -1,14 +1,8 @@
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroPhone from "@/assets/hero-phone.webp";
-
-const stats = [
-  "200+ Local Businesses Ranked in Top 3",
-  "Results in 6-8 Weeks or Your Money Back",
-  "White-Hat SEO That Complies with Google Guidelines",
-];
 
 const HeroSection = () => (
   <section id="home" className="relative overflow-hidden hero-bg pt-28 pb-20 md:pt-36 md:pb-28">
@@ -28,26 +22,11 @@ const HeroSection = () => (
             🏆 #1 Local SEO Agency
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-primary-foreground mb-6">
-            Dominate Local Search with Expert Local SEO Services
+            We boost your visibility on Google
           </h1>
           <p className="text-lg text-primary-foreground/70 mb-8 max-w-lg">
-            Proven strategies that get your business to the top of Google Maps in 90 days or less. No guesswork, just real results.
+            Our SEO strategies help your business climb search rankings and attract more customers.
           </p>
-
-          <div className="space-y-3 mb-10">
-            {stats.map((s, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 + i * 0.15 }}
-                className="flex items-center gap-3"
-              >
-                <CheckCircle className="text-accent w-5 h-5 shrink-0" />
-                <span className="text-primary-foreground/85 font-medium text-sm">{s}</span>
-              </motion.div>
-            ))}
-          </div>
 
           <div className="flex flex-wrap gap-4">
             <Link to="/contacts">

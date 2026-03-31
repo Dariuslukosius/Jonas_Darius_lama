@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logoImg from "@/assets/llama-logo.png";
+import googlePartnerLogo from "@/assets/partners/google-partner-logo-png_seeklogo-428155.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -17,32 +18,39 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass-card">
-      <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-8">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logoImg} alt="Llamamaps" className="h-10 w-auto" />
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-md">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
+        <Link to="/" className="flex items-center gap-3">
+          <img src={logoImg} alt="Llamamaps" className="h-11 w-auto" />
         </Link>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((l) => (
-            <Link
-              key={l.href}
-              to={l.href}
-              className={`text-sm font-medium transition-colors ${
-                location.pathname === l.href
-                  ? "text-primary"
-                  : "text-foreground/80 hover:text-primary"
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
+          <div className="flex items-center gap-6 lg:gap-8">
+            {navLinks.map((l) => (
+              <Link
+                key={l.href}
+                to={l.href}
+                className={`text-sm font-medium uppercase tracking-wide transition-colors lg:text-base ${
+                  location.pathname === l.href
+                    ? "text-[#3b82f6]"
+                    : "text-slate-700 hover:text-[#3b82f6]"
+                }`}
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="hidden lg:flex items-center border-l border-slate-200 pl-6">
+            <img src={googlePartnerLogo} alt="Google Partner" className="h-12 w-auto" />
+          </div>
+
           <Link
             to="/contacts"
-            className="inline-flex h-10 items-center rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground hover:bg-primary/85 transition-colors"
+            className="inline-flex h-12 items-center rounded-xl bg-[#3467e8] px-6 text-sm font-semibold uppercase tracking-wide text-white shadow-[0_12px_30px_rgba(52,103,232,0.22)] transition-colors hover:bg-[#2f5fd6]"
           >
-            Get a Free Audit
+            Get Free Audit
           </Link>
         </div>
 
@@ -61,7 +69,7 @@ const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden glass-card border-t border-border px-4 pb-4"
+          className="md:hidden border-t border-slate-200 bg-white px-4 pb-4"
         >
           {navLinks.map((l) => (
             <Link
@@ -80,9 +88,9 @@ const Navbar = () => {
           <Link
             to="/contacts"
             onClick={() => setOpen(false)}
-            className="mt-2 block w-full text-center rounded-lg bg-primary py-3 text-sm font-semibold text-primary-foreground"
+            className="mt-2 block w-full rounded-xl bg-[#3467e8] py-3 text-center text-sm font-semibold uppercase tracking-wide text-white"
           >
-            Get a Free Audit
+            Get Free Audit
           </Link>
         </motion.div>
       )}

@@ -24,17 +24,17 @@ const testimonials = [
     text: "For a long time, our business was difficult to find on Google, which meant we were losing potential customers. After starting with llamamaps, everything changed — within 3 months we reached TOP 5 positions for our main keywords.",
   },
   {
-    name: "Omar Al-Farouq",
+    name: "Omar Farouq",
     avatar: avatarOmar,
     text: "The llamamaps team exceeded our expectations. In a short time, they pushed our rankings into the TOP 5 and maintained them consistently throughout our collaboration.",
   },
   {
-    name: "Ahmed Al-Hassan",
+    name: "Ahmed Hassan",
     avatar: avatarAhmed,
     text: "Great team and very professional approach. They were always responsive, offered clear solutions, and delivered measurable results. Our online visibility improved significantly.",
   },
   {
-    name: "Sara Al-Mansouri",
+    name: "Sara Mansouri",
     avatar: avatarSara,
     text: "We truly appreciate their dedication and attention to detail. From the very beginning, there was a clear strategy, and results started showing faster than we anticipated.",
   },

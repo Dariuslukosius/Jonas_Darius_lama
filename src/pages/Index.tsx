@@ -5,7 +5,7 @@ import BrandsSection from "@/components/BrandsSection";
 import StatsSection from "@/components/StatsSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
-import FooterSection from "@/components/FooterSection";
+import ContactSection from "@/components/ContactSection";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -26,7 +26,7 @@ const Index = () => (
     <StatsSection />
     <SolutionsSection />
     <CaseStudiesSection />
-    <FooterSection />
+    <ContactSection />
   </div>
 );
 
