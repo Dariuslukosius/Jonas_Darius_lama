@@ -12,7 +12,6 @@ import improveSearchPerformance from "@/assets/services/improve-search-performan
 import increaseLocalVisibility from "@/assets/services/increase-local-visibility.webp";
 import noDirectAccess from "@/assets/services/no-direct-access.webp";
 import bestResults from "@/assets/services/best-results.webp";
-import marketLt from "@/assets/services/market-lt.webp";
 import googlePositionGif from "@/assets/services/google-position.gif";
 import britanniaImage from "@/assets/results/britannia.webp";
 import coffeShopResult from "@/assets/services-results/coffe-shop.png";
@@ -618,17 +617,16 @@ const ServicesPage = () => {
           <h2 className="text-4xl font-bold text-foreground md:text-5xl">More leads. Higher click-through. Lower ad costs.</h2>
         </motion.div>
 
-        <div className="mb-12 rounded-[2rem] border border-gray-200 bg-white p-8 shadow-lg">
-          <div className="grid items-center gap-8 md:grid-cols-2">
-            <div className="text-center">
-              <p className="text-xl leading-8 text-gray-700">
+        <div className="mx-auto mb-12 max-w-4xl rounded-[2rem] border border-gray-200 bg-white p-6 shadow-lg md:p-7">
+          <div className="grid items-center gap-5 md:grid-cols-[minmax(0,1fr)_280px] md:gap-6">
+            <div className="text-left">
+              <p className="text-lg leading-7 text-gray-700 md:text-[1.2rem] md:leading-8">
                 Many clients see a reduction of up to <span className="text-3xl font-bold text-green-600">50%</span> in
                 monthly ad spend after reaching stronger local rankings.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <img src={marketLt} alt="Lithuania market example" className="w-full rounded-2xl shadow-md" />
-              <img src={googlePositionGif} alt="English market example" className="w-full rounded-2xl shadow-md" />
+            <div className="flex justify-center md:justify-end">
+              <img src={googlePositionGif} alt="English market example" className="w-full max-w-[220px] rounded-2xl shadow-md md:max-w-[240px]" />
             </div>
           </div>
         </div>
