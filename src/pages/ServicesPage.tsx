@@ -810,8 +810,8 @@ const ServicesPage = () => {
           className="mb-8 text-center"
         >
           <div className="inline-flex rounded-[1.2rem] bg-gradient-to-r from-[#356de8] to-[#b77df2] p-[0.25rem] shadow-[0_16px_40px_rgba(73,110,225,0.14)]">
-            <div className="rounded-[1rem] bg-white/92 px-4 py-2">
-              <span className="bg-gradient-to-r from-[#356de8] to-[#b77df2] bg-clip-text text-[0.76rem] font-black uppercase tracking-[0.24em] text-transparent">
+            <div className="rounded-[1rem] bg-gradient-to-r from-[#356de8] to-[#b77df2] px-4 py-2">
+              <span className="text-[0.76rem] font-black uppercase tracking-[0.24em] text-white">
                 Price List
               </span>
             </div>
