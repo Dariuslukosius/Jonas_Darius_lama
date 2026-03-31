@@ -13,9 +13,7 @@ import increaseLocalVisibility from "@/assets/services/increase-local-visibility
 import noDirectAccess from "@/assets/services/no-direct-access.webp";
 import bestResults from "@/assets/services/best-results.webp";
 import marketLt from "@/assets/services/market-lt.webp";
-import marketEng from "@/assets/services/market-eng.webp";
-import pricingCommunity from "@/assets/services/pricing-community.webp";
-import pricingCity from "@/assets/services/pricing-city.webp";
+import googlePositionGif from "@/assets/services/google-position.gif";
 import britanniaImage from "@/assets/results/britannia.webp";
 import coffeShopResult from "@/assets/services-results/coffe-shop.png";
 import gymResult from "@/assets/services-results/gym.png";
@@ -170,57 +168,58 @@ const stats = [
 
 const pricingPlans = [
   {
-    label: "🏘️ Community",
     name: "Community",
-    badge: "4 km radius",
-    image: pricingCommunity,
+    columnLabel: "Mini",
+    radius: "Within a 2.5-mile radius",
+    price: "500 GBP / month",
+    priceNote: "Multi-location discounts available",
     description:
       "Perfect for local shops, restaurants, and service-based businesses that want better visibility on Google Maps, attract more local customers, and steadily grow their sales.",
-    tone: "blue",
-    features: [
-      { text: "10 business keyword analysis and optimization", included: true },
-      { text: "Guaranteed TOP 3 positions in local search", included: true },
-      { text: "GPS local activity enhancement", included: true },
-      { text: "Google Business Profile SEO", included: true },
-      { text: "Website internal Local SEO", included: true },
-      { text: "Position tracking in local search", included: true },
-      { text: "Results reports every 2 weeks", included: true },
-      { text: "Google reviews automation", included: false },
-      { text: "Google posts management", included: false },
-      { text: "Brand mentions", included: false },
-      { text: "Google Ads management", included: false },
-      { text: "Full website SEO optimization", included: false },
-      { text: "YouTube SEO optimization + video upload", included: false },
-      { text: "Reputation management and response strategy", included: false },
-      { text: "30+ premium citations + niche backlinks", included: false },
-    ],
+    dailySignals: "10-20 / day",
+    keywords: "10",
+    freeTrial: "+",
+    cloudStack: "+",
+    mediumPages: "-",
+    googlePages: "-",
+    googleDocuments: "-",
+    pdfAssets: "-",
+    top3Guarantee: "+",
+    gpsActivity: "+",
+    gbpSeo: "+",
+    websiteLocalSeo: "+",
+    rankTracking: "+",
+    reporting: "+",
+    purpose:
+      "Subtly increase your GBP profile visibility, strengthen your Google Maps TOP 3 potential, and support steady organic local growth.",
+    audience:
+      "Ideal for smaller local businesses that want to strengthen their position, improve visibility, and grow consistently.",
   },
   {
-    label: "🏙️ City",
     name: "City",
-    badge: "8 km radius",
-    image: pricingCity,
+    columnLabel: "Maxi",
+    radius: "Within a 5-mile radius",
+    price: "1000 GBP / month",
+    priceNote: "Multi-location discounts available",
     description:
       "Ideal for competitive businesses such as dental or beauty clinics that aim to dominate on Google Maps, attract higher-value clients, and rapidly scale.",
-    tone: "teal",
-    featured: true,
-    features: [
-      { text: "10 business keyword analysis and optimization", included: true },
-      { text: "Guaranteed TOP 3 positions in local search", included: true },
-      { text: "GPS local activity enhancement", included: true },
-      { text: "Google Business Profile SEO", included: true },
-      { text: "Website internal Local SEO", included: true },
-      { text: "Position tracking in local search", included: true },
-      { text: "Results reports every 2 weeks", included: true },
-      { text: "Google reviews automation", included: true },
-      { text: "Google posts management", included: true },
-      { text: "Brand mentions", included: true },
-      { text: "Google Ads management", included: true },
-      { text: "Full website SEO optimization", included: true },
-      { text: "YouTube SEO optimization + video upload", included: false },
-      { text: "Reputation management and response strategy", included: false },
-      { text: "30+ premium citations + niche backlinks", included: false },
-    ],
+    dailySignals: "30-40 / day + calls to profile",
+    keywords: "20",
+    freeTrial: "+",
+    cloudStack: "+",
+    mediumPages: "+",
+    googlePages: "+",
+    googleDocuments: "+",
+    pdfAssets: "+",
+    top3Guarantee: "+",
+    gpsActivity: "+",
+    gbpSeo: "+",
+    websiteLocalSeo: "+",
+    rankTracking: "+",
+    reporting: "+",
+    purpose:
+      "Organically strengthen your market position, expand reach, and move faster toward TOP 3 visibility in more competitive searches.",
+    audience:
+      "Perfect for businesses seeking stronger growth, wider local reach, and a faster path toward a leading position in their city.",
   },
 ];
 
@@ -629,7 +628,7 @@ const ServicesPage = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img src={marketLt} alt="Lithuania market example" className="w-full rounded-2xl shadow-md" />
-              <img src={marketEng} alt="English market example" className="w-full rounded-2xl shadow-md" />
+              <img src={googlePositionGif} alt="English market example" className="w-full rounded-2xl shadow-md" />
             </div>
           </div>
         </div>
@@ -805,94 +804,100 @@ const ServicesPage = () => {
       </section>
 
     <section className="bg-background px-4 py-16 md:px-8 md:py-18">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 text-center"
+          className="mb-8 text-center"
         >
-          <h2 className="text-4xl font-bold text-foreground md:text-5xl">Simple pricing, maximum value</h2>
-          <p className="mx-auto mt-5 max-w-4xl text-lg leading-8 text-muted-foreground">
-            Choose the package that fits your business goals. Every plan follows the same visual direction as your
-            original `local-seo.html`.
-          </p>
+          <div className="inline-flex rounded-[1.2rem] bg-gradient-to-r from-[#356de8] to-[#b77df2] p-[0.25rem] shadow-[0_16px_40px_rgba(73,110,225,0.14)]">
+            <div className="rounded-[1rem] bg-white/92 px-4 py-2">
+              <span className="bg-gradient-to-r from-[#356de8] to-[#b77df2] bg-clip-text text-[0.76rem] font-black uppercase tracking-[0.24em] text-transparent">
+                Price List
+              </span>
+            </div>
+          </div>
         </motion.div>
 
-        <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
-          {pricingPlans.map((plan) => (
-            <motion.div
-              key={plan.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className={`relative rounded-[1.5rem] p-8 transition-all duration-300 hover:-translate-y-2 ${
-                plan.featured
-                  ? "border-2 border-[#3b82f6] bg-gradient-to-br from-white to-[#f0f4ff] shadow-xl"
-                  : "border border-gray-200 bg-white/90 shadow-md hover:border-blue-300 hover:shadow-xl"
-              }`}
-              style={{ backdropFilter: "blur(10px)" }}
-            >
-              <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-                <div className="inline-flex whitespace-nowrap rounded-full bg-gradient-to-r from-[#3b82f6] to-[#a855f7] px-6 py-2 text-sm font-bold text-white shadow-md">
-                  {plan.label}
-                </div>
-              </div>
-              {plan.featured ? (
-                <div className="absolute right-4 top-0 -translate-y-1/2 rounded-full bg-[#59c36a] px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-white shadow-md">
-                  Most Popular
-                </div>
-              ) : null}
-              <img src={plan.image} alt={plan.name} className="mx-auto mb-3 mt-5 h-auto w-full max-w-28 rounded-xl object-contain" />
-              <div className={`mb-2 text-center text-sm font-semibold ${
-                plan.tone === "teal" ? "text-teal-600" : "text-blue-600"
-              }`}>
-                {plan.badge}
-              </div>
-              <h3 className="mb-3 text-center text-[2rem] font-bold leading-none text-gray-900">{plan.name}</h3>
-              <p className="mx-auto mb-8 max-w-[320px] text-center text-[15px] leading-7 text-gray-600">{plan.description}</p>
-
-              <div className={`rounded-xl p-6 ${
-                plan.tone === "teal" ? "bg-green-50/60" : "bg-blue-50/50"
-              }`}>
-                <h4 className={`mb-4 text-lg font-bold ${plan.tone === "teal" ? "text-green-900" : "text-blue-900"}`}>
-                  What's included:
-                </h4>
-                <ul className="space-y-3 text-sm">
-                  {plan.features.map((feature) => (
-                    <li key={feature.text} className="flex items-start gap-2">
-                      {feature.included ? (
-                        <span className={`mt-0.5 shrink-0 font-bold ${plan.tone === "teal" ? "text-green-600" : "text-blue-600"}`}>✅</span>
-                      ) : (
-                        <span className="mt-0.5 shrink-0 font-bold text-red-400">❌</span>
-                      )}
-                      <span className={feature.included ? "text-gray-700" : "text-gray-600"}>{feature.text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <Link to="/contacts" className="mt-8 block">
-                <Button className={`h-12 w-full rounded-lg font-bold uppercase tracking-[0.03em] text-white shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl ${
-                  plan.tone === "teal"
-                    ? "bg-[#49a767] hover:bg-[#3f965b]"
-                    : "bg-[#3867e8] hover:bg-[#2f58ca]"
-                }`}>
-                  Try It For Free
-                </Button>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-
-        <div className="mt-16 rounded-[2rem] border border-gray-200 bg-white p-8 text-center">
-          <h4 className="mb-6 text-xl font-bold text-gray-900">All packages include:</h4>
-          <div className="flex flex-wrap justify-center gap-6 text-gray-600">
-            <span className="flex items-center gap-2"><Check className="h-4 w-4 text-green-600" /> Free GMB Audit</span>
-            <span className="flex items-center gap-2"><Check className="h-4 w-4 text-green-600" /> Free 10-day Trial</span>
-            <span className="flex items-center gap-2"><Check className="h-4 w-4 text-green-600" /> No Setup Fees</span>
-            <span className="flex items-center gap-2"><Check className="h-4 w-4 text-green-600" /> Cancel Anytime</span>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="overflow-hidden rounded-[1.5rem] border border-[#cfdcf8] bg-white shadow-[0_18px_55px_rgba(41,73,122,0.07)]"
+        >
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[680px] border-collapse">
+              <thead>
+                <tr className="bg-gradient-to-r from-[#6d3ab2] to-[#8d58cf] text-white">
+                  <th className="border border-[#4e3482] px-4 py-3 text-left text-[1rem] font-black uppercase tracking-[0.06em] md:text-[1.3rem]">
+                    Plan
+                  </th>
+                  <th className="border border-[#4e3482] px-4 py-3 text-center text-[1rem] font-black uppercase tracking-[0.06em] md:text-[1.3rem]">
+                    {pricingPlans[0].columnLabel}
+                  </th>
+                  <th className="border border-[#4e3482] px-4 py-3 text-center text-[1rem] font-black uppercase tracking-[0.06em] md:text-[1.3rem]">
+                    {pricingPlans[1].columnLabel}
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="text-[#171717]">
+                {[
+                  ["Standard monthly subscription price", pricingPlans[0].price, pricingPlans[1].price],
+                  ["Connecting more than 1 GBP profile", pricingPlans[0].priceNote, pricingPlans[1].priceNote],
+                  ["Daily Google Maps direction signals", pricingPlans[0].dailySignals, pricingPlans[1].dailySignals],
+                  ["Rating grid", pricingPlans[0].radius, pricingPlans[1].radius],
+                  ["Keywords", pricingPlans[0].keywords, pricingPlans[1].keywords],
+                  ["Free 7-day trial", pricingPlans[0].freeTrial, pricingPlans[1].freeTrial],
+                  ["Guaranteed TOP 3 positions", pricingPlans[0].top3Guarantee, pricingPlans[1].top3Guarantee],
+                  ["GPS local activity enhancement", pricingPlans[0].gpsActivity, pricingPlans[1].gpsActivity],
+                  ["Google Business Profile SEO", pricingPlans[0].gbpSeo, pricingPlans[1].gbpSeo],
+                  ["Website internal Local SEO", pricingPlans[0].websiteLocalSeo, pricingPlans[1].websiteLocalSeo],
+                  ["Cloud stack service", pricingPlans[0].cloudStack, pricingPlans[1].cloudStack],
+                  ["Position tracking in local search", pricingPlans[0].rankTracking, pricingPlans[1].rankTracking],
+                  ["Results reports every 2 weeks", pricingPlans[0].reporting, pricingPlans[1].reporting],
+                  ["Medium pages", pricingPlans[0].mediumPages, pricingPlans[1].mediumPages],
+                  ["Google pages", pricingPlans[0].googlePages, pricingPlans[1].googlePages],
+                  ["Google documents", pricingPlans[0].googleDocuments, pricingPlans[1].googleDocuments],
+                  ["PDF", pricingPlans[0].pdfAssets, pricingPlans[1].pdfAssets],
+                  ["Purpose", pricingPlans[0].purpose, pricingPlans[1].purpose],
+                  ["Who is it for?", pricingPlans[0].audience, pricingPlans[1].audience],
+                ].map(([label, communityValue, cityValue], index) => (
+                  <tr key={label} className={index % 2 === 0 ? "bg-white" : "bg-[#f7f8fc]"}>
+                    <td className="border border-[#a5acbc] px-3 py-2.5 align-top text-[0.86rem] font-bold leading-[1.15] md:px-4 md:text-[0.94rem]">
+                      {label}
+                    </td>
+                    <td className={`border border-[#a5acbc] px-3 py-2.5 align-top text-center text-[0.84rem] leading-[1.22] md:px-4 md:text-[0.92rem] ${
+                      communityValue === "+" || communityValue === "-"
+                        ? "text-[1.05rem] font-black"
+                        : label === "Connecting more than 1 GBP profile"
+                          ? "font-semibold italic"
+                          : "font-medium"
+                    }`}>
+                      {communityValue}
+                    </td>
+                    <td className={`border border-[#a5acbc] px-3 py-2.5 align-top text-center text-[0.84rem] leading-[1.22] md:px-4 md:text-[0.92rem] ${
+                      cityValue === "+" || cityValue === "-"
+                        ? "text-[1.05rem] font-black"
+                        : label === "Connecting more than 1 GBP profile"
+                          ? "font-semibold italic"
+                          : "font-medium"
+                    }`}>
+                      {cityValue}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
+        </motion.div>
+
+        <div className="mt-8 text-center">
+          <Link to="/contacts" className="inline-flex">
+            <Button className="h-12 rounded-full bg-[#3867e8] px-8 font-bold uppercase tracking-[0.06em] text-white shadow-lg transition-all hover:-translate-y-1 hover:bg-[#2f58ca] hover:shadow-xl">
+              Try It For Free
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

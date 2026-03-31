@@ -2,8 +2,6 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BrandsSection from "@/components/BrandsSection";
-import StatsSection from "@/components/StatsSection";
-import SolutionsSection from "@/components/SolutionsSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import ContactSection from "@/components/ContactSection";
 import { Button } from "@/components/ui/button";
@@ -23,8 +21,6 @@ const Index = () => (
         </Button>
       </Link>
     </section>
-    <StatsSection />
-    <SolutionsSection />
     <CaseStudiesSection />
     <ContactSection />
   </div>

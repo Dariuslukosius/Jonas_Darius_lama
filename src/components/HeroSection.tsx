@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroPhone from "@/assets/hero-phone.webp";
 
+const heroHighlights = [
+  { value: "8x", label: "Average client growth" },
+  { value: "7+", label: "Years expertise in Google marketing" },
+  { value: "Europe", label: "We work with clients across Europe" },
+] as const;
+
 const HeroSection = () => (
   <section id="home" className="relative overflow-hidden hero-bg pt-28 pb-20 md:pt-36 md:pb-28">
     {/* Decorative circles */}
@@ -27,6 +33,18 @@ const HeroSection = () => (
           <p className="text-lg text-primary-foreground/70 mb-8 max-w-lg">
             Our SEO strategies help your business climb search rankings and attract more customers.
           </p>
+
+          <div className="mb-8 grid max-w-xl gap-3 sm:grid-cols-3">
+            {heroHighlights.map((item) => (
+              <div
+                key={item.value}
+                className="rounded-2xl border border-primary-foreground/18 bg-primary-foreground/[0.08] px-4 py-3 backdrop-blur-sm"
+              >
+                <p className="text-lg font-bold leading-none text-[#79A7FF]">{item.value}</p>
+                <p className="mt-1 text-xs leading-5 text-white">{item.label}</p>
+              </div>
+            ))}
+          </div>
 
           <div className="flex flex-wrap gap-4">
             <Link to="/contacts">
