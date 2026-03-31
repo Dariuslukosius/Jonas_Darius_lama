@@ -14,8 +14,10 @@ import noDirectAccess from "@/assets/services/no-direct-access.webp";
 import bestResults from "@/assets/services/best-results.webp";
 import googlePositionGif from "@/assets/services/google-position.gif";
 import britanniaImage from "@/assets/results/britannia.webp";
-import coffeShopResult from "@/assets/services-results/coffe-shop.png";
-import gymResult from "@/assets/services-results/gym.png";
+import bruchFulhamBefore from "@/assets/results-home/new-cases/bruch-fulham-before.png";
+import bruchFulhamAfter from "@/assets/results-home/new-cases/bruch-fulham-after.png";
+import dantuProtezavimasUtenaBefore from "@/assets/results-home/new-cases/dantu-protezavimas-utena-before.png";
+import dantuProtezavimasUtenaAfter from "@/assets/results-home/new-cases/dantu-protezavimas-utena-after.png";
 import artfiksa from "@/assets/brands/artfiksa.png";
 import autoVela from "@/assets/brands/auto-vela.png";
 import clinicDpc from "@/assets/brands/clinic-dpc.png";
@@ -73,7 +75,7 @@ const traditionalMissing = new Set([
 
 const caseStudies = [
   {
-    title: "Coffe Shop",
+    title: "Brunch Fulham",
     badge: "Local ranking result",
     description:
       "A visual before-and-after ranking snapshot showing stronger local visibility and better position coverage after optimization.",
@@ -82,13 +84,18 @@ const caseStudies = [
     result: "Higher local visibility",
     metricTitle: "Google Maps heatmap",
     stats: ["Before vs After", "More green coverage"],
-    singleImage: coffeShopResult,
-    accent: "from-orange-500 to-red-500",
-    panel: "from-orange-50 to-red-50 border-orange-200",
-    text: "text-orange-700",
+    keyword: "bruch fulham",
+    location: "Brunch Fulham",
+    beforeLabel: "Before (Feb 3rd - Rank 13)",
+    afterLabel: "After (Feb 16th - Rank 3)",
+    beforeImage: bruchFulhamBefore,
+    afterImage: bruchFulhamAfter,
+    accent: "from-blue-500 to-indigo-500",
+    panel: "from-blue-50 to-indigo-50 border-blue-200",
+    text: "text-blue-700",
   },
   {
-    title: "Gym",
+    title: "Dantu protezavimas utena",
     badge: "Local ranking result",
     description:
       "A second visual result example showing improved coverage and stronger ranking zones across the target service area.",
@@ -97,10 +104,15 @@ const caseStudies = [
     result: "Stronger map presence",
     metricTitle: "Google Maps heatmap",
     stats: ["Before vs After", "Higher ranking spread"],
-    singleImage: gymResult,
-    accent: "from-emerald-500 to-lime-500",
-    panel: "from-emerald-50 to-lime-50 border-emerald-200",
-    text: "text-emerald-700",
+    keyword: "dantu protezavimas utena",
+    location: "Utena",
+    beforeLabel: "Before (Apr 21st - Rank 7)",
+    afterLabel: "After (Nov 3rd - Rank 1)",
+    beforeImage: dantuProtezavimasUtenaBefore,
+    afterImage: dantuProtezavimasUtenaAfter,
+    accent: "from-blue-500 to-indigo-500",
+    panel: "from-blue-50 to-indigo-50 border-blue-200",
+    text: "text-blue-700",
   },
   {
     title: "Britannia Accountancy Services Ltd",
@@ -530,17 +542,45 @@ const ServicesPage = () => {
                 transition={{ delay: index * 0.08 }}
                 className="relative overflow-hidden rounded-[1.5rem] border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-3 shadow-lg md:p-4"
               >
-                <div className="absolute -right-12 -top-12 h-28 w-28 rounded-full bg-gray-100/70" />
-                <div className="relative">
-                  {"singleImage" in study && study.singleImage && (
-                    <div className="overflow-hidden rounded-[1.1rem] border border-gray-200 bg-white p-2">
-                      <img
-                        src={study.singleImage}
-                        alt={study.title}
-                        className="h-auto max-h-[290px] w-full rounded-[0.85rem] object-contain xl:max-h-[320px]"
-                      />
+                <div className="relative overflow-hidden rounded-[1.3rem] border border-[#dfe7f2] bg-white shadow-[0_14px_35px_rgba(15,23,42,0.06)]">
+                  <div className="px-4 pb-3 pt-5 text-center md:px-5 md:pt-6">
+                    <p className="text-[0.92rem] font-normal leading-none text-[#1c1c1c] md:text-[1.05rem]">
+                      Keyword: <span className="font-semibold">{study.keyword}</span>
+                    </p>
+                    <p className="mt-3 text-[0.92rem] font-normal leading-none text-[#1c1c1c] md:text-[1.05rem]">
+                      Location: <span className="font-semibold">{study.location}</span>
+                    </p>
+                  </div>
+
+                  <div className="grid gap-3 px-2 pb-4 pt-1 sm:px-4 md:grid-cols-2 md:px-5">
+                    <div className="rounded-[0.8rem] border border-[#e7edf5] bg-white p-1 shadow-sm">
+                      <img src={study.beforeImage} alt={`${study.keyword} before`} className="w-full rounded-[0.65rem]" />
                     </div>
-                  )}
+
+                    <div className="rounded-[0.8rem] border border-[#e7edf5] bg-white p-1 shadow-sm">
+                      <img src={study.afterImage} alt={`${study.keyword} after`} className="w-full rounded-[0.65rem]" />
+                    </div>
+                  </div>
+
+                  <div className="px-4 pb-5 pt-1 md:px-5">
+                    <div className="grid justify-items-center gap-3 md:grid-cols-2 md:justify-items-start">
+                      <div className="w-fit rounded-[0.8rem] bg-[#eef5ff] px-3 py-2 text-center">
+                        <p className="text-[0.72rem] font-normal leading-tight text-[#2563eb] md:text-[0.8rem]">
+                          {study.beforeLabel}
+                        </p>
+                      </div>
+
+                      <div className="w-fit rounded-[0.8rem] bg-[#eef5ff] px-3 py-2 text-center">
+                        <p className="text-[0.72rem] font-normal leading-tight text-[#2563eb] md:text-[0.8rem]">
+                          {study.afterLabel}
+                        </p>
+                      </div>
+                    </div>
+
+                    <p className="mt-5 text-center text-[1rem] font-normal leading-none text-[#1c1c1c] md:text-[1.12rem]">
+                      More <span className="font-semibold text-[#269246]">Green</span> Means Higher Ranking!
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             ))}
