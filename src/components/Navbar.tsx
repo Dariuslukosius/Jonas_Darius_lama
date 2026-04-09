@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logoImg from "@/assets/llama-logo.png";
 import googlePartnerLogo from "@/assets/partners/google-partner-logo-png_seeklogo-428155.png";
 
 const navLinks = [
@@ -21,7 +20,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-md">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logoImg} alt="Llamamaps" className="h-11 w-auto" />
+          <img src="/LamaLocal_Logo_New.webp" alt="Lama Local" className="h-11 w-auto" />
         </Link>
 
         {/* Desktop */}

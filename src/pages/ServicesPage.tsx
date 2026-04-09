@@ -14,8 +14,8 @@ import noDirectAccess from "@/assets/services/no-direct-access.webp";
 import bestResults from "@/assets/services/best-results.webp";
 import googlePositionGif from "@/assets/services/google-position.gif";
 import britanniaImage from "@/assets/results/britannia.webp";
-import bruchFulhamBefore from "@/assets/results-home/new-cases/bruch-fulham-before.png";
-import bruchFulhamAfter from "@/assets/results-home/new-cases/bruch-fulham-after.png";
+import mercedesBefore from "@/assets/results-home/new-cases/mercedes-before.png";
+import mercedesAfter from "@/assets/results-home/new-cases/mercedes-after.png";
 import dantuProtezavimasUtenaBefore from "@/assets/results-home/new-cases/dantu-protezavimas-utena-before.png";
 import dantuProtezavimasUtenaAfter from "@/assets/results-home/new-cases/dantu-protezavimas-utena-after.png";
 import artfiksa from "@/assets/brands/artfiksa.png";
@@ -75,7 +75,7 @@ const traditionalMissing = new Set([
 
 const caseStudies = [
   {
-    title: "Brunch Fulham",
+    title: "Mercedes Autoservisas",
     badge: "Local ranking result",
     description:
       "A visual before-and-after ranking snapshot showing stronger local visibility and better position coverage after optimization.",
@@ -84,12 +84,12 @@ const caseStudies = [
     result: "Higher local visibility",
     metricTitle: "Google Maps heatmap",
     stats: ["Before vs After", "More green coverage"],
-    keyword: "bruch fulham",
-    location: "Brunch Fulham",
+    keyword: "mercedes autoservisas kaunas",
+    location: "Kaunas",
     beforeLabel: "Before (Feb 3rd - Rank 13)",
     afterLabel: "After (Feb 16th - Rank 3)",
-    beforeImage: bruchFulhamBefore,
-    afterImage: bruchFulhamAfter,
+    beforeImage: mercedesBefore,
+    afterImage: mercedesAfter,
     accent: "from-blue-500 to-indigo-500",
     panel: "from-blue-50 to-indigo-50 border-blue-200",
     text: "text-blue-700",
@@ -498,7 +498,7 @@ const ServicesPage = () => {
                   Standard SEO +
                 </span>
                 <span className="rounded-full bg-accent px-3 py-1 text-sm font-extrabold uppercase tracking-[0.2em] text-white">
-                  Llamamaps
+                  Lama Local
                 </span>
               </h3>
               <ul className="space-y-4">

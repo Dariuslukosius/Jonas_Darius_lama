@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Send, Facebook, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Send, Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -7,8 +7,9 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const socialLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61576212845220", icon: Facebook },
-  { label: "Instagram", href: "https://www.instagram.com/llamamaps/", icon: Instagram },
+  { label: "Facebook", href: "https://www.facebook.com/lamalocal", icon: Facebook },
+  { label: "Instagram", href: "https://www.instagram.com/lamalocal/", icon: Instagram },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/lamalocal", icon: Linkedin },
 ];
 
 const ContactSection = () => {
@@ -38,11 +39,11 @@ const ContactSection = () => {
               <div className="rounded-[1.75rem] border border-white/10 bg-[rgba(8,20,17,0.58)] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.18)] backdrop-blur-sm">
                 <p className="text-2xl font-semibold text-white">Email</p>
                 <a
-                  href="mailto:jurgis@llamamaps.com"
+                  href="mailto:info@lamalocal.com"
                   className="mt-8 flex items-center gap-4 text-xl text-white/85 transition-colors hover:text-white"
                 >
                   <Mail className="h-7 w-7 shrink-0" />
-                  <span className="break-all">jurgis@llamamaps.com</span>
+                  <span className="break-all">info@lamalocal.com</span>
                 </a>
               </div>
 
@@ -56,13 +57,22 @@ const ContactSection = () => {
 
               <div className="rounded-[1.75rem] border border-white/10 bg-[rgba(8,20,17,0.58)] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.18)] backdrop-blur-sm">
                 <p className="text-2xl font-semibold text-white">Phone number</p>
-                <a
-                  href="tel:+37064195947"
-                  className="mt-8 flex items-center gap-4 text-xl text-white/85 transition-colors hover:text-white"
-                >
-                  <Phone className="h-7 w-7 shrink-0" />
-                  <span>+370-64195947</span>
-                </a>
+                <div className="mt-8 space-y-3">
+                  <a
+                    href="tel:+37064195947"
+                    className="flex items-center gap-4 text-lg text-white/85 transition-colors hover:text-white"
+                  >
+                    <Phone className="h-7 w-7 shrink-0" />
+                    <span>LT: +370-64195947</span>
+                  </a>
+                  <a
+                    href="tel:+447598555448"
+                    className="flex items-center gap-4 text-lg text-white/85 transition-colors hover:text-white"
+                  >
+                    <Phone className="h-7 w-7 shrink-0" />
+                    <span>EN: +44 7598 555448</span>
+                  </a>
+                </div>
 
                 <div className="mt-8 flex items-center gap-5">
                   {socialLinks.map((social) => {
@@ -87,8 +97,8 @@ const ContactSection = () => {
               <div className="rounded-[1.75rem] border border-white/10 bg-[rgba(8,20,17,0.58)] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.18)] backdrop-blur-sm">
                 <p className="text-2xl font-semibold text-white">Brand</p>
                 <div className="mt-8 space-y-2 text-xl text-white/85">
-                  <p>Llamamaps</p>
-                  <p className="text-base text-white/55">Local SEO services for businesses that want stronger visibility.</p>
+                  <p>Lama Local</p>
+                  <p className="text-base text-white/55">Local SEO services helping local businesses dominate Google Maps.</p>
                 </div>
               </div>
             </div>

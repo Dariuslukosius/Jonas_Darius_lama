@@ -1,31 +1,25 @@
 import { motion } from "framer-motion";
 
-import artfiksa from "@/assets/brands/artfiksa.png";
-import autoVela from "@/assets/brands/auto-vela.png";
-import clinicDpc from "@/assets/brands/clinic-dpc.png";
-import ecoResort from "@/assets/brands/eco-resort.png";
-import eraEsthetic from "@/assets/brands/era-esthetic.png";
-import fastCar from "@/assets/brands/fast-car.png";
-import motoSvajone from "@/assets/brands/moto-svajone.png";
-import royalHorse from "@/assets/brands/royal-horse.png";
-import sokrato from "@/assets/brands/sokrato.png";
-import svajonuSpa from "@/assets/brands/svajoniu-spa.png";
-import televizoriu from "@/assets/brands/televizoriu.png";
-import wheelshop from "@/assets/brands/wheelshop.png";
+import hansetrailer from "@/assets/brands/Hansetrailer logo.jpg";
+import agrija from "@/assets/brands/agrija-logotipas.svg";
+import alfadenta from "@/assets/brands/alfadenta-logotipas.webp";
+import amadenta from "@/assets/brands/amadenta-horizontal-logo.svg";
+import autoglass from "@/assets/brands/autoglass.jpg";
+import basAccountant from "@/assets/brands/bas accountant logo.png";
+import jomiTatto from "@/assets/brands/jomi tatto logo.jpg";
+import romtesa from "@/assets/brands/romtesa logo.png";
+import svytintysDantys from "@/assets/brands/svytintys dantys logo.jpg";
 
 const brands = [
-  { src: artfiksa, alt: "Artfiksa Plytelės" },
-  { src: autoVela, alt: "Auto Vela" },
-  { src: clinicDpc, alt: "Clinic DPC" },
-  { src: ecoResort, alt: "Eco Resort Trakai" },
-  { src: eraEsthetic, alt: "Era Esthetic Dental" },
-  { src: fastCar, alt: "Fast Car Shop" },
-  { src: motoSvajone, alt: "Moto Svajonė" },
-  { src: royalHorse, alt: "Royal Horse Resort" },
-  { src: sokrato, alt: "Sokrato Clinica" },
-  { src: svajonuSpa, alt: "Svajonių SPA" },
-  { src: televizoriu, alt: "Televizorių Išparduotuvė" },
-  { src: wheelshop, alt: "Wheelshop.lt" },
+  { src: hansetrailer, alt: "Hansetrailer" },
+  { src: agrija, alt: "Agrija" },
+  { src: alfadenta, alt: "Alfadenta Dental" },
+  { src: amadenta, alt: "Amadenta Dental" },
+  { src: autoglass, alt: "Autoglass.lt" },
+  { src: basAccountant, alt: "BAS Accountant" },
+  { src: jomiTatto, alt: "Jomi Tatto" },
+  { src: romtesa, alt: "Romtesa" },
+  { src: svytintysDantys, alt: "Svytintys Dantys" },
 ];
 
 const BrandsSection = () => (
@@ -44,7 +38,7 @@ const BrandsSection = () => (
               src={b.src}
               alt={b.alt}
               loading="lazy"
-              className="h-14 md:h-16 w-auto object-contain brightness-0"
+              className="h-14 md:h-16 w-auto object-contain filter grayscale contrast-150 brightness-110"
             />
           </motion.div>
         ))}

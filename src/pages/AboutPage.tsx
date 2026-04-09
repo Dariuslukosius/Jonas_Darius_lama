@@ -3,10 +3,15 @@ import ContactSection from "@/components/ContactSection";
 import BrandsSection from "@/components/BrandsSection";
 import { motion } from "framer-motion";
 import { Target, Users, Award, Clock } from "lucide-react";
-import benasSukys from "@/assets/members/Benas_Sukys.jpg";
-import jurgisGrigaliunas from "@/assets/members/Jurgis_Grigaliunas.jpg";
+
+// Team member images
 import dariusLukosius from "@/assets/members/darius_lukosius.webp";
-import jonasPernovas from "@/assets/members/jonas_pernovas.png";
+import reginaldas from "@/assets/members/reginaldas_raila.webp";
+import nerijus from "@/assets/members/nerijus_rimdzius.webp";
+import justinas from "@/assets/members/justinas_meilutis.webp";
+import ferida from "@/assets/members/ferida_nagijeva.webp";
+import hanna from "@/assets/members/hanna_raile.png";
+import jonas from "@/assets/members/jonas_pernovas.png";
 
 const values = [
   {
@@ -33,28 +38,60 @@ const values = [
 
 const team = [
   {
-    name: "Benas Sukys",
-    role: "Local SEO Strategist",
-    image: benasSukys,
-    desc: "Builds local SEO strategies focused on rankings, qualified leads, and steady long-term growth for clients.",
-  },
-  {
-    name: "Jurgis Grigaliunas",
-    role: "Client Success Lead",
-    image: jurgisGrigaliunas,
-    desc: "Leads communication, project delivery, and strategy alignment to keep every campaign moving clearly and smoothly.",
-  },
-  {
     name: "Darius Lukosius",
-    role: "Technical SEO Lead",
+    role: "Local SEO Expert & AI Developer",
     image: dariusLukosius,
-    desc: "Handles technical SEO, on-page improvements, and performance foundations that help businesses rank with confidence.",
+    desc: "Specialist in Local SEO strategy, AI-powered automation, and backlink building",
+    specialties: ["Local SEO Strategy", "AI Automation", "Backlink Building", "Technical SEO", "Algorithm Analysis", "Google Maps SEO"],
+    color: "blue",
+  },
+  {
+    name: "Reginaldas Raila",
+    role: "AI & SEO Technology Specialist",
+    image: reginaldas,
+    desc: "AI integration expert specializing in SEO automation and data-driven strategies",
+    specialties: ["AI Integration", "SEO Analytics", "Automation Development", "Data Science", "Performance Optimization", "Algorithm Design"],
+    color: "green",
+  },
+  {
+    name: "Nerijus Rimdzius",
+    role: "Digital Marketing & Reputation Manager",
+    image: nerijus,
+    desc: "Expert in Google Ads, Facebook Ads, and online reputation management",
+    specialties: ["Google Ads", "Facebook Ads", "Reputation Management", "Social Media Marketing", "PPC Strategy", "Review Management"],
+    color: "purple",
+  },
+  {
+    name: "Justinas Meilutis",
+    role: "Marketing Strategist",
+    image: justinas,
+    desc: "Content marketing and brand development specialist focused on customer acquisition",
+    specialties: ["Content Marketing", "Brand Development", "Marketing Analytics", "Campaign Optimization", "Customer Acquisition", "ROI Analysis"],
+    color: "yellow",
+  },
+  {
+    name: "Ferida Nagijeva",
+    role: "Client Relations Specialist",
+    image: ferida,
+    desc: "Customer service and client communication expert specializing in relationship management",
+    specialties: ["Client Communication", "Outbound Calling", "Customer Service", "Relationship Management", "Lead Generation", "CRM Management"],
+    color: "pink",
+  },
+  {
+    name: "Hanna Raile",
+    role: "Graphic Designer & UI/UX Specialist",
+    image: hanna,
+    desc: "Expert in visual identity development, print design, and web design",
+    specialties: ["Visual Identity", "Print Design", "UI/UX Design", "Brand Development", "Adobe InDesign", "Web Design"],
+    color: "teal",
   },
   {
     name: "Jonas Pernovas",
-    role: "Content Strategist",
-    image: jonasPernovas,
-    desc: "Creates service and location content that improves local relevance, trust, and conversion intent across the site.",
+    role: "Local SEO Specialist",
+    image: jonas,
+    desc: "SEO consultant helping service businesses improve local visibility",
+    specialties: ["Google Business Profile", "Technical SEO", "Local SEO", "GA4 Analytics", "Keyword Research", "Citation Management"],
+    color: "orange",
   },
 ];
 
@@ -77,7 +114,7 @@ const AboutPage = () => (
             </span>
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate-600 md:text-xl">
-            Llamamaps was founded with a single mission: help local businesses dominate their market on Google. We combine deep expertise, ethical strategies, and relentless optimization to get you to the top — and keep you there.
+            Lama Local was founded with a single mission: help local businesses dominate their market on Google. We combine deep expertise, ethical strategies, and relentless optimization to get you to the top — and keep you there.
           </p>
           <p className="mx-auto mt-3 max-w-2xl text-xl font-semibold text-slate-900 md:text-2xl">
             We help businesses win locally, one campaign at a time.
@@ -161,10 +198,10 @@ const AboutPage = () => (
           <span className="text-sm font-semibold text-accent uppercase tracking-widest">Our Team</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-3 text-foreground">Meet the Team</h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            The people behind Llamamaps combine strategy, technical SEO, content, and client support to help businesses grow locally.
+            The people behind Lama Local combine strategy, technical SEO, content, and client support to help businesses grow locally.
           </p>
         </motion.div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {team.map((t, i) => (
             <motion.div
               key={i}
@@ -172,14 +209,21 @@ const AboutPage = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="overflow-hidden rounded-2xl bg-card border border-border p-6 hover:shadow-md transition-shadow group"
+              className="overflow-hidden rounded-2xl bg-card border border-border p-6 hover:shadow-md transition-shadow group flex flex-col"
             >
               <div className="mb-5 aspect-[4/4.5] overflow-hidden rounded-xl">
                 <img src={t.image} alt={t.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="text-xl font-semibold text-foreground">{t.name}</h3>
               <p className="mt-1 text-sm font-medium text-accent">{t.role}</p>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{t.desc}</p>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed flex-grow">{t.desc}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {t.specialties.slice(0, 3).map((spec, idx) => (
+                  <span key={idx} className="text-xs font-semibold px-3 py-1 rounded-full bg-accent/10 text-accent">
+                    {spec}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>

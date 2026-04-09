@@ -16,17 +16,17 @@ const testimonials = [
   {
     name: "Lina Petrova",
     avatar: avatarLina,
-    text: "We are very satisfied with the work delivered. Communication was smooth, with clear monthly reports and detailed explanations. We achieved the promised results within 3 months, even sooner than expected. Highly recommend llamamaps!",
+    text: "We are very satisfied with the work delivered. Communication was smooth, with clear monthly reports and detailed explanations. We achieved the promised results within 3 months, even sooner than expected. Highly recommend Lama Local!",
   },
   {
     name: "Giedrė Bagdonavičienė",
     avatar: avatarGiedre,
-    text: "For a long time, our business was difficult to find on Google, which meant we were losing potential customers. After starting with llamamaps, everything changed — within 3 months we reached TOP 5 positions for our main keywords.",
+    text: "For a long time, our business was difficult to find on Google, which meant we were losing potential customers. After starting with Lama Local, everything changed — within 3 months we reached TOP 5 positions for our main keywords.",
   },
   {
     name: "Omar Farouq",
     avatar: avatarOmar,
-    text: "The llamamaps team exceeded our expectations. In a short time, they pushed our rankings into the TOP 5 and maintained them consistently throughout our collaboration.",
+    text: "The Lama Local team exceeded our expectations. In a short time, they pushed our rankings into the TOP 5 and maintained them consistently throughout our collaboration.",
   },
   {
     name: "Ahmed Hassan",
@@ -41,7 +41,7 @@ const testimonials = [
   {
     name: "Tomas Vaitkus",
     avatar: avatarTomas,
-    text: "Working with llamamaps was simple and effective. Not only did our Google rankings improve, but we also saw a noticeable increase in customer inquiries.",
+    text: "Working with Lama Local was simple and effective. Not only did our Google rankings improve, but we also saw a noticeable increase in customer inquiries.",
   },
   {
     name: "Emily Carter",

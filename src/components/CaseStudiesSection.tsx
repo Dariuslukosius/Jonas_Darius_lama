@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
-import bruchFulhamBefore from "@/assets/results-home/new-cases/bruch-fulham-before.png";
-import bruchFulhamAfter from "@/assets/results-home/new-cases/bruch-fulham-after.png";
+import mercedesBefore from "@/assets/results-home/new-cases/mercedes-before.png";
+import mercedesAfter from "@/assets/results-home/new-cases/mercedes-after.png";
 import dantuProtezavimasUtenaBefore from "@/assets/results-home/new-cases/dantu-protezavimas-utena-before.png";
 import dantuProtezavimasUtenaAfter from "@/assets/results-home/new-cases/dantu-protezavimas-utena-after.png";
-import pompanoBeachTruckParkingBefore from "@/assets/results-home/new-cases/pompano-beach-truck-parking-before.png";
-import pompanoBeachTruckParkingAfter from "@/assets/results-home/new-cases/pompano-beach-truck-parking-after.png";
+import duslintvuRemonatasBefore from "@/assets/results-home/new-cases/duslintuvu-remontas-before.png";
+import duslintvuRemonatasAfter from "@/assets/results-home/new-cases/duslintuvu-remontas-after.png";
 import accountingStatistic from "@/assets/results-home/accounting-gmb-statistic.png";
 import dantistStatistic from "@/assets/results-home/dantist-gmb-statistic.png";
 import ClientReviewsSection from "@/components/ClientReviewsSection";
 
 const cases = [
   {
-    keyword: "bruch fulham",
-    location: "Brunch Fulham",
+    keyword: "mercedes autoservisas kaunas",
+    location: "Kaunas",
     beforeDate: "3 February 2026",
     afterDate: "16 February 2026",
     beforeLabel: "Before (Feb 3rd - Rank 13)",
     afterLabel: "After (Feb 16th - Rank 3)",
     beforeMetric: "",
     afterMetric: "",
-    beforeImage: bruchFulhamBefore,
-    afterImage: bruchFulhamAfter,
+    beforeImage: mercedesBefore,
+    afterImage: mercedesAfter,
   },
   {
     keyword: "dantu protezavimas utena",
@@ -35,16 +35,16 @@ const cases = [
     afterImage: dantuProtezavimasUtenaAfter,
   },
   {
-    keyword: "pompano beach truck parking",
-    location: "Pompano Beach",
+    keyword: "duslintuvu remontas",
+    location: "Duslintuva",
     beforeDate: "18 August 2025",
     afterDate: "8 January 2026",
     beforeLabel: "Before (Aug 18th - Rank 21)",
     afterLabel: "After (Jan 8th - Rank 1)",
     beforeMetric: "",
     afterMetric: "",
-    beforeImage: pompanoBeachTruckParkingBefore,
-    afterImage: pompanoBeachTruckParkingAfter,
+    beforeImage: duslintvuRemonatasBefore,
+    afterImage: duslintvuRemonatasAfter,
   },
 ] as const;
 
@@ -96,11 +96,11 @@ const CaseStudiesSection = () => (
 
             <div className="grid gap-5 px-2 pb-5 pt-2 sm:px-5 md:grid-cols-2 md:px-7">
               <div className="rounded-[0.9rem] border border-[#e7edf5] bg-white p-1 shadow-sm">
-                <img src={cs.beforeImage} alt={`${cs.keyword} before`} className="w-full rounded-[0.7rem]" />
+                <img src={cs.beforeImage} alt={`${cs.keyword} before`} className="w-full h-auto max-h-[280px] object-contain rounded-[0.7rem]" />
               </div>
 
               <div className="rounded-[0.9rem] border border-[#e7edf5] bg-white p-1 shadow-sm">
-                <img src={cs.afterImage} alt={`${cs.keyword} after`} className="w-full rounded-[0.7rem]" />
+                <img src={cs.afterImage} alt={`${cs.keyword} after`} className="w-full h-auto max-h-[280px] object-contain rounded-[0.7rem]" />
               </div>
             </div>
 
