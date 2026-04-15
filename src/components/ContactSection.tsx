@@ -97,7 +97,7 @@ const ContactSection = () => {
               <div className="rounded-[1.75rem] border border-white/10 bg-[rgba(8,20,17,0.58)] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.18)] backdrop-blur-sm">
                 <p className="text-2xl font-semibold text-white">Brand</p>
                 <div className="mt-8 space-y-2 text-xl text-white/85">
-                  <p>Lama Local</p>
+                  <p>LamaLocal</p>
                   <p className="text-base text-white/55">Local SEO services helping local businesses dominate Google Maps.</p>
                 </div>
               </div>

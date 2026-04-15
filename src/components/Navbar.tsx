@@ -9,6 +9,7 @@ const navLinks = [
   { label: "About Us", href: "/about" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Services", href: "/services" },
+  { label: "SEO patarimai", href: "/seo-patarimai" },
   { label: "Contacts", href: "/contacts" },
 ];
 
@@ -16,11 +17,19 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
+  const isLinkActive = (href: string) => {
+    if (href === "/") {
+      return location.pathname === "/";
+    }
+
+    return location.pathname === href || location.pathname.startsWith(`${href}/`);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-md">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/LamaLocal_Logo_New.webp" alt="Lama Local" className="h-11 w-auto" />
+          <img src="/LamaLocal_Logo_New.png" alt="LamaLocal" className="h-10 w-auto md:h-11" />
         </Link>
 
         {/* Desktop */}
@@ -31,7 +40,7 @@ const Navbar = () => {
                 key={l.href}
                 to={l.href}
                 className={`text-sm font-medium uppercase tracking-wide transition-colors lg:text-base ${
-                  location.pathname === l.href
+                  isLinkActive(l.href)
                     ? "text-[#3b82f6]"
                     : "text-slate-700 hover:text-[#3b82f6]"
                 }`}
@@ -76,7 +85,7 @@ const Navbar = () => {
               to={l.href}
               onClick={() => setOpen(false)}
               className={`block py-3 text-sm font-medium ${
-                location.pathname === l.href
+                isLinkActive(l.href)
                   ? "text-primary"
                   : "text-foreground/80 hover:text-primary"
               }`}

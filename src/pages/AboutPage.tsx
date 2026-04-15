@@ -51,7 +51,7 @@ const team = [
     image: reginaldas,
     desc: "AI integration expert specializing in SEO automation and data-driven strategies",
     specialties: ["AI Integration", "SEO Analytics", "Automation Development", "Data Science", "Performance Optimization", "Algorithm Design"],
-    color: "green",
+    color: "purple",
   },
   {
     name: "Nerijus Rimdzius",
@@ -114,7 +114,7 @@ const AboutPage = () => (
             </span>
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate-600 md:text-xl">
-            Lama Local was founded with a single mission: help local businesses dominate their market on Google. We combine deep expertise, ethical strategies, and relentless optimization to get you to the top — and keep you there.
+            LamaLocal was founded with a single mission: help local businesses dominate their market on Google. We combine deep expertise, ethical strategies, and relentless optimization to get you to the top — and keep you there.
           </p>
           <p className="mx-auto mt-3 max-w-2xl text-xl font-semibold text-slate-900 md:text-2xl">
             We help businesses win locally, one campaign at a time.
@@ -198,7 +198,7 @@ const AboutPage = () => (
           <span className="text-sm font-semibold text-accent uppercase tracking-widest">Our Team</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-3 text-foreground">Meet the Team</h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            The people behind Lama Local combine strategy, technical SEO, content, and client support to help businesses grow locally.
+            The people behind LamaLocal combine strategy, technical SEO, content, and client support to help businesses grow locally.
           </p>
         </motion.div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

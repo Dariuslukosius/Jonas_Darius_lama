@@ -130,7 +130,7 @@ const CaseStudiesSection = () => (
               </div>
 
               <p className="mt-7 text-center text-[1.1rem] font-normal leading-none text-[#1c1c1c] sm:text-[1.28rem]">
-                More <span className="font-semibold text-[#269246]">Green</span> Means Higher Ranking!
+                More <span className="font-semibold text-green-600">Green</span> Means Higher Ranking!
               </p>
             </div>
           </motion.div>

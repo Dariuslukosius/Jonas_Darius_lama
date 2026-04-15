@@ -35,7 +35,7 @@ const AboutSection = () => (
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-widest">About Us</span>
         <h2 className="text-3xl md:text-4xl font-bold mt-3 text-foreground">
-          Why Businesses Choose Lama Local
+          Why Businesses Choose LamaLocal
         </h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
           We specialize exclusively in local SEO, combining data-driven strategies with hands-on expertise to deliver measurable results for local businesses.

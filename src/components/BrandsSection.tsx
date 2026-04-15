@@ -1,25 +1,25 @@
 import { motion } from "framer-motion";
 
-import hansetrailer from "@/assets/brands/Hansetrailer logo.jpg";
 import agrija from "@/assets/brands/agrija-logotipas.svg";
 import alfadenta from "@/assets/brands/alfadenta-logotipas.webp";
 import amadenta from "@/assets/brands/amadenta-horizontal-logo.svg";
 import autoglass from "@/assets/brands/autoglass.jpg";
-import basAccountant from "@/assets/brands/bas accountant logo.png";
-import jomiTatto from "@/assets/brands/jomi tatto logo.jpg";
-import romtesa from "@/assets/brands/romtesa logo.png";
-import svytintysDantys from "@/assets/brands/svytintys dantys logo.jpg";
+import artfiksa from "@/assets/brands/artfiksa.png";
+import autoVela from "@/assets/brands/auto-vela.png";
+import clinicDpc from "@/assets/brands/clinic-dpc.png";
+import ecoResort from "@/assets/brands/eco-resort.png";
+import fastCar from "@/assets/brands/fast-car.png";
 
 const brands = [
-  { src: hansetrailer, alt: "Hansetrailer" },
   { src: agrija, alt: "Agrija" },
   { src: alfadenta, alt: "Alfadenta Dental" },
   { src: amadenta, alt: "Amadenta Dental" },
   { src: autoglass, alt: "Autoglass.lt" },
-  { src: basAccountant, alt: "BAS Accountant" },
-  { src: jomiTatto, alt: "Jomi Tatto" },
-  { src: romtesa, alt: "Romtesa" },
-  { src: svytintysDantys, alt: "Svytintys Dantys" },
+  { src: artfiksa, alt: "Artfiksa" },
+  { src: autoVela, alt: "Auto Vela" },
+  { src: clinicDpc, alt: "Clinic DPC" },
+  { src: ecoResort, alt: "Eco Resort" },
+  { src: fastCar, alt: "Fast Car" },
 ];
 
 const BrandsSection = () => (

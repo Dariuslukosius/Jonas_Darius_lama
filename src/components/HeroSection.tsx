@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroPhone from "@/assets/hero-phone.webp";
+import heroDiscoveryVideo from "@/assets/hero-gmb-from-image-1280.webm";
 
 const heroHighlights = [
   { value: "8x", label: "Average client growth" },
@@ -60,7 +60,7 @@ const HeroSection = () => (
           </div>
         </motion.div>
 
-        {/* Right - phone mockup */}
+        {/* Right - discovery gif */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -69,10 +69,13 @@ const HeroSection = () => (
         >
           <div className="relative">
             <div className="absolute inset-0 bg-accent/20 blur-3xl rounded-full scale-75" />
-            <img
-              src={heroPhone}
-              alt="Google Maps ranking showing top 3 position for local business"
-              className="relative z-10 w-full max-w-sm rounded-3xl shadow-2xl"
+            <video
+              src={heroDiscoveryVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="relative z-10 w-full max-w-sm md:max-w-lg lg:max-w-2xl rounded-3xl shadow-2xl"
             />
           </div>
         </motion.div>

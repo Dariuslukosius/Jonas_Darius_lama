@@ -283,20 +283,20 @@ const CaseStudiesPage = () => (
                         </div>
                       </div>
 
-                      <div className="relative overflow-hidden rounded-lg border border-green-200 bg-green-50">
-                        <div className="border-b border-green-200 bg-gradient-to-r from-green-100 to-emerald-100 px-2 py-1">
+                      <div className="relative overflow-hidden rounded-lg border border-purple-200 bg-purple-50">
+                        <div className="border-b border-purple-200 bg-gradient-to-r from-purple-100 to-violet-100 px-2 py-1">
                           <div className="flex items-center justify-between text-xs">
-                            <span className="font-bold text-green-800">{study.after.label}</span>
-                            <span className="rounded-full bg-gradient-to-r from-green-600 to-emerald-600 px-2 py-0.5 text-xs font-bold text-white">{study.after.value}</span>
+                            <span className="font-bold text-purple-800">{study.after.label}</span>
+                            <span className="rounded-full bg-gradient-to-r from-purple-600 to-violet-600 px-2 py-0.5 text-xs font-bold text-white">{study.after.value}</span>
                           </div>
                         </div>
                         <div className="bg-white p-1">
                           <img src={study.after.image} alt={`${study.title} after`} className="w-full object-contain" />
                         </div>
-                        <div className="border-t border-green-200 bg-gradient-to-r from-green-100 to-emerald-100 px-2 py-1">
-                          <p className="text-center text-xs font-semibold text-green-800">{study.after.date}</p>
+                        <div className="border-t border-purple-200 bg-gradient-to-r from-purple-100 to-violet-100 px-2 py-1">
+                          <p className="text-center text-xs font-semibold text-purple-800">{study.after.date}</p>
                         </div>
-                        <div className="absolute right-1 top-1 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 px-2 py-0.5 text-xs font-bold text-white">
+                        <div className="absolute right-1 top-1 rounded-full bg-gradient-to-r from-purple-500 to-violet-500 px-2 py-0.5 text-xs font-bold text-white">
                           {study.after.floating}
                         </div>
                       </div>

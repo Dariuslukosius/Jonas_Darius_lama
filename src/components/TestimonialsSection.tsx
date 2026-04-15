@@ -4,47 +4,47 @@ import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 
-import avatarLina from "@/assets/avatar-lina.jpg";
-import avatarGiedre from "@/assets/avatar-giedre.jpg";
-import avatarOmar from "@/assets/avatar-omar.jpg";
-import avatarAhmed from "@/assets/avatar-ahmed.jpg";
-import avatarSara from "@/assets/avatar-sara.jpg";
-import avatarTomas from "@/assets/avatar-tomas.jpg";
+import avatarDavid from "@/assets/avatar-david.jpg";
+import avatarJennifer from "@/assets/avatar-jennifer.jpg";
+import avatarMarcus from "@/assets/avatar-marcus.jpg";
+import avatarMichelle from "@/assets/avatar-michelle.jpg";
+import avatarRobert from "@/assets/avatar-robert.jpg";
+import avatarSarah from "@/assets/avatar-sarah.jpg";
 import avatarEmily from "@/assets/avatar-emily.jpg";
 
 const testimonials = [
   {
-    name: "Lina Petrova",
-    avatar: avatarLina,
-    text: "We are very satisfied with the work delivered. Communication was smooth, with clear monthly reports and detailed explanations. We achieved the promised results within 3 months, even sooner than expected. Highly recommend Lama Local!",
+    name: "Lina Petrauskienė",
+    avatar: avatarJennifer,
+    text: "Although we started working together only recently, Jonas has already made a very strong impression. He is communicative, persistent, and always ready to help. Thank you for the support — we confidently recommend him!",
   },
   {
     name: "Giedrė Bagdonavičienė",
-    avatar: avatarGiedre,
-    text: "For a long time, our business was difficult to find on Google, which meant we were losing potential customers. After starting with Lama Local, everything changed — within 3 months we reached TOP 5 positions for our main keywords.",
+    avatar: avatarSarah,
+    text: "Excellent communication and high-quality work. Feedback is taken into account and everything is coordinated smoothly. Overall impression is very positive — I am satisfied with the result.",
   },
   {
-    name: "Omar Farouq",
-    avatar: avatarOmar,
-    text: "The Lama Local team exceeded our expectations. In a short time, they pushed our rankings into the TOP 5 and maintained them consistently throughout our collaboration.",
+    name: "Mantas Kazlauskas",
+    avatar: avatarMarcus,
+    text: "The LamaLocal team exceeded our expectations. In a short time, they pushed our rankings into the TOP 5 and maintained them consistently throughout our collaboration.",
   },
   {
-    name: "Ahmed Hassan",
-    avatar: avatarAhmed,
+    name: "Paulius Petraitis",
+    avatar: avatarDavid,
     text: "Great team and very professional approach. They were always responsive, offered clear solutions, and delivered measurable results. Our online visibility improved significantly.",
   },
   {
-    name: "Sara Mansouri",
-    avatar: avatarSara,
+    name: "Ieva Stankevičienė",
+    avatar: avatarMichelle,
     text: "We truly appreciate their dedication and attention to detail. From the very beginning, there was a clear strategy, and results started showing faster than we anticipated.",
   },
   {
     name: "Tomas Vaitkus",
-    avatar: avatarTomas,
-    text: "Working with Lama Local was simple and effective. Not only did our Google rankings improve, but we also saw a noticeable increase in customer inquiries.",
+    avatar: avatarRobert,
+    text: "Working with LamaLocal was simple and effective. Not only did our Google rankings improve, but we also saw a noticeable increase in customer inquiries.",
   },
   {
-    name: "Emily Carter",
+    name: "Ema Jasiūnaitė",
     avatar: avatarEmily,
     text: "The results speak for themselves — within a few months, our website traffic increased multiple times. The team kept us informed and provided valuable insights throughout the process.",
   },

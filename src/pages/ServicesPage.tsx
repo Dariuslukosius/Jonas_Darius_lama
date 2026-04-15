@@ -83,7 +83,7 @@ const caseStudies = [
     duration: "Ongoing optimization",
     result: "Higher local visibility",
     metricTitle: "Google Maps heatmap",
-    stats: ["Before vs After", "More green coverage"],
+    stats: ["Before vs After", "More purple coverage"],
     keyword: "mercedes autoservisas kaunas",
     location: "Kaunas",
     beforeLabel: "Before (Feb 3rd - Rank 13)",
@@ -147,7 +147,7 @@ const whyCards = [
     description:
       "Our local SEO workflows strengthen search relevance around your services, target locations, and intent-driven keywords so more ready-to-buy people find you.",
     image: improveSearchPerformance,
-    colors: "from-emerald-50 to-green-50 border-emerald-200 text-emerald-900",
+    colors: "from-purple-50 to-violet-50 border-purple-200 text-purple-900",
     subtitleColor: "text-emerald-600",
   },
   {
@@ -498,7 +498,7 @@ const ServicesPage = () => {
                   Standard SEO +
                 </span>
                 <span className="rounded-full bg-accent px-3 py-1 text-sm font-extrabold uppercase tracking-[0.2em] text-white">
-                  Lama Local
+                  LamaLocal
                 </span>
               </h3>
               <ul className="space-y-4">
@@ -578,7 +578,7 @@ const ServicesPage = () => {
                     </div>
 
                     <p className="mt-5 text-center text-[1rem] font-normal leading-none text-[#1c1c1c] md:text-[1.12rem]">
-                      More <span className="font-semibold text-[#269246]">Green</span> Means Higher Ranking!
+                      More <span className="font-semibold text-purple-600">Purple</span> Means Higher Ranking!
                     </p>
                   </div>
                 </div>
@@ -613,7 +613,7 @@ const ServicesPage = () => {
                   <div className="space-y-2 rounded-xl bg-gray-50 p-4 text-sm text-gray-600 md:p-6 md:text-base">
                     <p><span className="font-semibold">Timeline:</span> {study.timeline}</p>
                     <p><span className="font-semibold">Duration:</span> <span className={study.text}>{study.duration}</span></p>
-                    <p><span className="font-semibold">Result:</span> <span className="font-bold text-green-600">{study.result}</span></p>
+                    <p><span className="font-semibold">Result:</span> <span className="font-bold text-purple-600">{study.result}</span></p>
                   </div>
                 </div>
 
@@ -661,7 +661,7 @@ const ServicesPage = () => {
           <div className="grid items-center gap-5 md:grid-cols-[minmax(0,1fr)_280px] md:gap-6">
             <div className="text-left">
               <p className="text-lg leading-7 text-gray-700 md:text-[1.2rem] md:leading-8">
-                Many clients see a reduction of up to <span className="text-3xl font-bold text-green-600">50%</span> in
+                Many clients see a reduction of up to <span className="text-3xl font-bold text-purple-600">50%</span> in
                 monthly ad spend after reaching stronger local rankings.
               </p>
             </div>
