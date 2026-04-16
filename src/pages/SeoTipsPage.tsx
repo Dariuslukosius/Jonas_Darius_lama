@@ -10,6 +10,7 @@ import {
   seoLessonsBySlug,
   seoSections,
 } from "@/lib/seoCourseData";
+import seoCourseSystemHero from "@/../public/seo-lessons/seo-kurso-sistema-v2.webp";
 
 const standards = [
   {
@@ -161,7 +162,17 @@ const SeoTipsPage = () => (
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.55, delay: 0.08 }}
             >
-              <SeoCourseArtwork variant="tools" title="SEO mokymų sistema" />
+              <div className="overflow-hidden rounded-[2rem] border border-[#dbe5f0] bg-[radial-gradient(circle_at_top_right,_rgba(34,197,94,0.08),_transparent_28%),radial-gradient(circle_at_bottom_left,_rgba(59,130,246,0.08),_transparent_30%),linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] p-4 shadow-[0_28px_70px_rgba(15,23,42,0.08)]">
+                <div className="mb-3 inline-flex rounded-full border border-[#d9e6f5] bg-white/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#5a6d8b]">
+                  SEO mokymų sistema
+                </div>
+                <img
+                  src={seoCourseSystemHero}
+                  alt="SEO mokymų sistemos vizualas"
+                  className="w-full rounded-[1.7rem] border border-[#e2eaf3] object-cover shadow-[0_20px_50px_rgba(15,23,42,0.08)]"
+                  loading="eager"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
